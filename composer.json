@@ -1,9 +1,11 @@
 {
     "name": "caiovilanova/cvil-responsive-menu",
-    "description": "It is a easy PHP upload manager for images, files and media in your application",
+    "description": "This feature is a set of html, css and js files that create a responsive menu navbar useful for most websites.",
     "keywords": [
-      "CaioVilanova",
+      "Caio Vilanova",
+      "caiovilanova",
       "responsive menu",
+      "menu mobile",
       "html css navbar",
       "responsive navbar"
     ],

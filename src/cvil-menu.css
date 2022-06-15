@@ -1,0 +1,191 @@
+
+/*
+**
+CREATED AT 2022-06-10
+BY: CAIO VILANOVA - caiovilanova.com - github.com/caiovilanova
+NAV BAR AND RESPONSIVE MENU
+**
+*/
+
+/*NORMALIZE AND BODY SET-UP */
+*{
+    --color-text: #171717;
+    --color-text-inverse: #DDD;
+    --color-text-hover: #000;
+    --color-text-inverse-hover: #FFF;  
+    --font-family: 'Arial', 'Helvetica', sans-serif;
+    --font-size: 16px;
+    --bg-navbar-mobile-active: #FFF;
+    --bg-navbar-list-active: #FFF;
+    --navbar-height: 90px;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: var(--navbar-height);
+    padding: 0px;
+    background-color: transparent;
+    z-index: 901;
+    transition: all 0.2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar .navbar-brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    min-width: 250px;
+    height: calc(var(--navbar-height) - 10px);
+    padding: 0 20px;
+    margin: 0;
+    font-size: calc(var(--font-size) * 1.6);
+    font-weight: bold;
+    color: var(--color-text);
+    z-index: 902;
+}
+
+.navbar a.navbar-brand{ text-decoration: none; color: inherit; }
+
+.navbar .navbar-brand img{ width: 100%; transform: scale(1); transition: all 0.4s; }
+
+.navbar .navbar-brand img:hover{ transform: scale(1.1); }
+
+.navbar .navbar-menu{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar .navbar-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 20px 0 0;
+    padding: 0;
+    list-style: none;
+    transition: all 0.4s;
+}
+
+.navbar .nav-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: calc( var(--font-size)* 1.4 ) !important;
+    color: var(--color-text);
+    list-style: none;
+}
+
+.navbar .nav-item a.nav-link{
+    color: var(--color-text) !important;
+    text-shadow: var(--color-text-inverse) 1px 1px 1px;
+    font-size: inherit;
+    text-decoration: none !important;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.navbar .nav-item a.nav-link:hover{
+    color: var(--color-text-hover) !important;
+    text-decoration: none !important;
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.navbar .navbar-button{
+    display: block; /* in mobile display none */
+    width: 60px;
+    height: 60px;
+    margin: 2px 6px;
+    padding: 0;
+    color: var(--color-text) !important;
+    transition: all 0.4s;
+    z-index: 903;
+}
+
+.navbar .navbar-button:hover{ color: var(--color-text-hover) !important; }
+
+.navbar .navbar-button svg{ fill: currentColor; }
+
+.noScrolling{ overflow: hidden !important; }
+
+
+
+
+
+
+
+
+
+
+/*DESKTOP*/
+@media screen and (min-width: 900.01px) {
+    .navbar .navbar-button{ display: none !important;}
+}
+
+/*MOBILE*/
+@media screen and (max-width: 900px) {
+
+    
+    /* script.js add class below / adiciona esta classe via javascript */
+    .navbar.navbar-mobile-active{
+        background-color: var(--bg-navbar-mobile-active); 
+    } 
+
+    .navbar .navbar-list{ 
+        /*some properties are inherited from above class before  @media query*/
+        /*algumas propriedades, como display flexbox, estão herdadas da classe acima antes do @media query*/
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0px;        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bg-navbar-list-active);
+        z-index: 900;
+        transform: translate3d(0, -150%, 0);
+        overflow-y: auto; 
+     }
+     
+     .navbar .navbar-list-mobile-active{
+        top: -14px;
+        transform: translate3d(0, var(--navbar-height), 0) !important;
+    }
+
+    .navbar .navbar-list::-webkit-scrollbar{
+        width: 14px;
+    }
+    .navbar .navbar-list::-webkit-scrollbar-track{
+        background-color: var(--bg-navbar-list-active);
+    }
+    .navbar .navbar-list::-webkit-scrollbar-thumb{
+        border: 4px solid var(--bg-navbar-list-active) !important;
+        background-color: var(--color-text);
+    }
+
+}

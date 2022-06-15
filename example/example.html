@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example - CVIL Responsive Menu</title>
+
+    <link rel="stylesheet" href="cvil-menu.css">
+    <style>
+        header{
+            height: 80vh;
+            background-image: url('background-example.jpg');
+            background-size: cover;
+        }
+        main, footer{
+            padding: 20px;
+        }
+        h1, p{
+            margin: 20px 0;
+        }
+        .container{
+            max-width: 980px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER HAVE A BACKGROUND IN STYLE TAG-->
+    <header>
+
+        <!--NAV BAR-->
+        <nav class="navbar" id="navbar">
+            <a class="navbar-brand" href="https://example.com">
+                BRAND
+            </a>
+            <div class="navbar-menu">
+                <a href="javascript:;" class="navbar-button" aria-label="Open menu">
+                    <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect class="navbar-button-rect1" x="8" y="10" width="24" height="3" aria-hidden="true"></rect>
+                        <rect class="navbar-button-rect2" x="8" y="16" width="24" height="3" aria-hidden="true"></rect>
+                        <rect class="navbar-button-rect3" x="8" y="22" width="24" height="3" aria-hidden="true"></rect>
+                    </svg>
+                </a>
+                <ul class="navbar-list">
+                    <li class="nav-item"><a class="nav-link" href="https://example.com/link1">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://example.com/link2">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://example.com/link3">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://example.com/link4">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <!--END NAV BAR-->
+
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Cvil Responsive Menu</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </main>
+
+    <footer>
+        <hr/>
+        <div class="container">
+                <p>Caio Vilanova. caiovilanova.com. github.com/caiovilanova</p>
+        </div>
+    </footer>
+
+    <script src="cvil-menu.js"></script>
+</body>
+
+</html>
