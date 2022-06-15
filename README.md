@@ -1,4 +1,4 @@
-# CVIL Responsive Menu  @caiovilanova
+# Cvil Responsive Menu  @caiovilanova
 
 [EN-US] This feature is a set of html, css and js files that create a responsive menu navbar useful for most websites.
 
@@ -23,14 +23,14 @@ composer require caiovilanova/cvil-responsive-menu
 
 ## Documentation
 
-#### menu.css
+#### CSS cvil-menu.css
 [EN-US] This file uses media query to set the screen resolution that adapts desktop to mobile design.
 It is easily possible to customize the menu by changing the color variables. The navbar is defined with position:absolute but can easily be changed to position:fixed without changing the behavior of the menu.
 
 [PT-BR] Este arquivo utiliza media query para definir a resolução de tela que adpata o design de desktop para mobile.
 É facilmente possível personalizar o menu alterando as variáveis de cor. A navbar está definida com position:absolute mas pode facilmente ser trocado por position:fixed sem alterar o comportamento do menu.
 
-#### script.js
+#### JAVASCRIPT cvil-menu.js
 
 [EN-US] This file listens for the menu button and, if enabled, applies styles that (1) remove scrolling from the page; (2) apply a background color to the transparent navbar and (3) Display the list of links filling the entire screen.
 
@@ -50,6 +50,9 @@ menuButton.addEventListener('click', function() {
 
 ### HTML
 
+[EN-US] Deployment in HTML:
+
+[PT-BR] Implantação no HTML:
             
 <!--NAV BAR-->
     <nav class="navbar" id="navbar">
