@@ -1,0 +1,24 @@
+{
+    "name": "caiovilanova/cvil-responsive-menu",
+    "description": "It is a easy PHP upload manager for images, files and media in your application",
+    "keywords": [
+      "CaioVilanova",
+      "responsive menu",
+      "html css navbar",
+      "responsive navbar"
+    ],
+    "homepage": "http://www.caiovilanova.com",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Caio Vilanova",
+        "email": "contato@caiovilanova.com.br",
+        "role": "Developer"
+      }
+    ],
+    "autoload": {
+      "psr-4": {
+        "caiovilanova\\cvil-responsive-menu\\": "src"
+      }
+    }
+  }

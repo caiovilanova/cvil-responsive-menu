@@ -1,0 +1,7 @@
+.env
+.git
+.idea
+.vscode
+.DS_Store
+vendor/
+node_modules/
